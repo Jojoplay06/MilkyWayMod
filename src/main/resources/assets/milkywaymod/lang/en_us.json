@@ -1,5 +1,7 @@
 {
   "block.milkywaymod.cheese_block": "Cheese Block",
+  "block.milkywaymod.old_cheese_block": "Old Cheese Block",
+
   "item.milkywaymod.cow_cheese": "Cow Cheese",
   "item.milkywaymod.sheep_cheese": "Sheep Cheese",
   "item.milkywaymod.goat_cheese": "Goat Cheese",
