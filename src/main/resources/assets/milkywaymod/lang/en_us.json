@@ -1,0 +1,13 @@
+{
+  "itemGroup.milkywaymod": "Example Mod Tab",
+  "block.milkywaymod.example_block": "Example Block",
+  "item.milkywaymod.example_item": "Example Item",
+
+  "milkywaymod.configuration.title": "MilkyWay Mod Configs",
+  "milkywaymod.configuration.section.milkywaymod.common.toml": "MilkyWay Mod Configs",
+  "milkywaymod.configuration.section.milkywaymod.common.toml.title": "MilkyWay Mod Configs",
+  "milkywaymod.configuration.items": "Item List",
+  "milkywaymod.configuration.logDirtBlock": "Log Dirt Block",
+  "milkywaymod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "milkywaymod.configuration.magicNumber": "Magic Number"
+}
