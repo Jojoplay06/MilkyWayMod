@@ -1,5 +1,6 @@
 package com.jojoplay.milkywaymod;
 
+import com.jojoplay.milkywaymod.block.ModBlocks;
 import com.jojoplay.milkywaymod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -52,6 +53,7 @@ public class MilkyWayMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -71,6 +73,8 @@ public class MilkyWayMod {
             event.accept(ModItems.GOAT_CHEESE);
             event.accept(ModItems.SHEEP_MILK_BUCKET);
             event.accept(ModItems.GOAT_MILK_BUCKET);
+            event.accept(ModItems.YOGURT);
+
         }
     }
 

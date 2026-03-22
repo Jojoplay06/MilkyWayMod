@@ -1,6 +1,7 @@
 package com.jojoplay.milkywaymod.event;
 
 import com.jojoplay.milkywaymod.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.animal.goat.Goat;
@@ -21,31 +22,39 @@ public class ModEvents {
         ItemStack stack = player.getItemInHand(event.getHand());
 
         //Oveja
-        if (event.getTarget() instanceof Sheep && stack.getItem() == Items.BUCKET){
-
-            if (!player.level().isClientSide){
-                player.setItemInHand(
-                        event.getHand(),
-                        new ItemStack(ModItems.SHEEP_MILK_BUCKET.get())
-                );
-            }
-
-            event.setCancellationResult(InteractionResult.SUCCESS);
-            event.setCanceled(true);
+        if (event.getTarget() instanceof Sheep sheep && stack.getItem() == Items.BUCKET && !sheep.isBaby()){
+            giveMilk(player, event, new ItemStack(ModItems.SHEEP_MILK_BUCKET.get()));
         }
 
         //Cabra
-        if (event.getTarget() instanceof Goat && stack.getItem() == Items.BUCKET){
+        if (event.getTarget() instanceof Goat goat && stack.getItem() == Items.BUCKET && !goat.isBaby()){
+            giveMilk(player, event, new ItemStack(ModItems.GOAT_MILK_BUCKET.get()));
+        }
+    }
 
-            if (!player.level().isClientSide){
-                player.setItemInHand(
-                        event.getHand(),
-                        new ItemStack(ModItems.GOAT_MILK_BUCKET.get())
-                );
+    private static void giveMilk(Player player, PlayerInteractEvent.EntityInteract event, ItemStack result) {
+
+        ItemStack stack = player.getItemInHand(event.getHand());
+
+        player.playSound(SoundEvents.COW_MILK, 1.0F, 1.0F);
+
+        if (!player.level().isClientSide) {
+
+            //si no esta en creativo quita un cubo
+            if (!player.getAbilities().instabuild) {
+                stack.shrink(1);
             }
 
-            event.setCancellationResult(InteractionResult.SUCCESS);
-            event.setCanceled(true);
+            if (stack.isEmpty()) {
+                player.setItemInHand(event.getHand(), result);
+            } else {
+                if (!player.getInventory().add(result)) {
+                    player.drop(result, false);
+                }
+            }
         }
+
+        event.setCancellationResult(net.minecraft.world.InteractionResult.SUCCESS);
+        event.setCanceled(true);
     }
 }
