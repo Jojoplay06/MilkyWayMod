@@ -24,8 +24,6 @@ public class MilkyWayModClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
-        MilkyWayMod.LOGGER.info("HELLO FROM CLIENT SETUP");
-        MilkyWayMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
     }
 }

@@ -1,7 +1,13 @@
 {
-  "itemGroup.milkywaymod": "Example Mod Tab",
-  "block.milkywaymod.example_block": "Example Block",
-  "item.milkywaymod.example_item": "Example Item",
+  "block.milkywaymod.cheese_block": "Cheese Block",
+  "item.milkywaymod.cow_cheese": "Cow Cheese",
+  "item.milkywaymod.sheep_cheese": "Sheep Cheese",
+  "item.milkywaymod.goat_cheese": "Goat Cheese",
+  "item.milkywaymod.sheep_milk_bucket": "Sheep Milk Bucket",
+  "item.milkywaymod.goat_milk_bucket": "Goat Milk Bucket",
+
+  "item.minecraft.milk_bucket": "Cow Milk Bucket",
+
 
   "milkywaymod.configuration.title": "MilkyWay Mod Configs",
   "milkywaymod.configuration.section.milkywaymod.common.toml": "MilkyWay Mod Configs",
