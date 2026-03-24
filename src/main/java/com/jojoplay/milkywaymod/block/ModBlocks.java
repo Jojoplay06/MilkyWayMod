@@ -20,12 +20,32 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(MilkyWayMod.MODID);
 
-    public static final DeferredBlock<Block> CHEESE_BLOCK = registerBlock("cheese_block",
+    public static final DeferredBlock<Block> COW_CHEESE_BLOCK = registerBlock("cow_cheese_block",
             () -> new Block(
                     BlockBehaviour.Properties.of()
             )
     );
-    public static final DeferredBlock<Block> OLD_CHEESE_BLOCK = registerBlock("old_cheese_block",
+    public static final DeferredBlock<Block> COW_OLD_CHEESE_BLOCK = registerBlock("cow_old_cheese_block",
+            () -> new Block(
+                    BlockBehaviour.Properties.of()
+            )
+    );
+    public static final DeferredBlock<Block> SHEEP_CHEESE_BLOCK = registerBlock("sheep_cheese_block",
+            () -> new Block(
+                    BlockBehaviour.Properties.of()
+            )
+    );
+    public static final DeferredBlock<Block> SHEEP_OLD_CHEESE_BLOCK = registerBlock("sheep_old_cheese_block",
+            () -> new Block(
+                    BlockBehaviour.Properties.of()
+            )
+    );
+    public static final DeferredBlock<Block> GOAT_CHEESE_BLOCK = registerBlock("goat_cheese_block",
+            () -> new Block(
+                    BlockBehaviour.Properties.of()
+            )
+    );
+    public static final DeferredBlock<Block> GOAT_OLD_CHEESE_BLOCK = registerBlock("goat_old_cheese_block",
             () -> new Block(
                     BlockBehaviour.Properties.of()
             )

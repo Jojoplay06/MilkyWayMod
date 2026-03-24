@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+     "B": {
+        "item": "milkywaymod:cow_cheese"
+     }
+  },
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "milkywaymod:cow_cheese_block"
+  }
+}

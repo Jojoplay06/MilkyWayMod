@@ -74,8 +74,12 @@ public class MilkyWayMod {
             event.accept(ModItems.SHEEP_MILK_BUCKET);
             event.accept(ModItems.GOAT_MILK_BUCKET);
             event.accept(ModItems.YOGURT);
-            event.accept(ModBlocks.CHEESE_BLOCK);
-            event.accept(ModBlocks.OLD_CHEESE_BLOCK);
+            event.accept(ModBlocks.COW_CHEESE_BLOCK);
+            event.accept(ModBlocks.COW_OLD_CHEESE_BLOCK);
+            event.accept(ModBlocks.SHEEP_CHEESE_BLOCK);
+            event.accept(ModBlocks.SHEEP_OLD_CHEESE_BLOCK);
+            event.accept(ModBlocks.GOAT_CHEESE_BLOCK);
+            event.accept(ModBlocks.GOAT_OLD_CHEESE_BLOCK);
         }
     }
 

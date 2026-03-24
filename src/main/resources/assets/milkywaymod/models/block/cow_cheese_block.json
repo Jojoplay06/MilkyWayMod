@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "milkywaymod:block/cheese_block"
+    "all": "milkywaymod:block/cow_cheese_block"
   }
 }

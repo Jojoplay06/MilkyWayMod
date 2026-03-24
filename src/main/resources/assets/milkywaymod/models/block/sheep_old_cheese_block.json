@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "milkywaymod:block/sheep_old_cheese_block"
+  }
+}
