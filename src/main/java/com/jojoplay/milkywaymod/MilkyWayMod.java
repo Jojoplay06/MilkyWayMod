@@ -2,6 +2,7 @@ package com.jojoplay.milkywaymod;
 
 import com.jojoplay.milkywaymod.block.ModBlocks;
 import com.jojoplay.milkywaymod.item.ModItems;
+import com.jojoplay.milkywaymod.villager.ModVillagers;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -55,6 +56,8 @@ public class MilkyWayMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModVillagers.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -80,6 +83,7 @@ public class MilkyWayMod {
             event.accept(ModBlocks.SHEEP_OLD_CHEESE_BLOCK);
             event.accept(ModBlocks.GOAT_CHEESE_BLOCK);
             event.accept(ModBlocks.GOAT_OLD_CHEESE_BLOCK);
+            event.accept(ModBlocks.CHEESEMAKER_TABLE);
         }
     }
 

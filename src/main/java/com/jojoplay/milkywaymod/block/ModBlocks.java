@@ -62,6 +62,11 @@ public class ModBlocks {
                             .randomTicks(),SHEEP_OLD_CHEESE_BLOCK
             )
     );
+    public static final DeferredBlock<Block> CHEESEMAKER_TABLE = registerBlock("cheesemaker_table",
+            () -> new Block(
+                    BlockBehaviour.Properties.of()
+            )
+    );
 
 
     private static <T extends Block> DeferredBlock<Block> registerBlock(String name, Supplier<T> block){

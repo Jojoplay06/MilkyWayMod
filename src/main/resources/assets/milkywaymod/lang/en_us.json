@@ -5,6 +5,7 @@
   "block.milkywaymod.sheep_old_cheese_block": "Sheep Old Cheese Block",
   "block.milkywaymod.goat_cheese_block": "Goat Cheese Block",
   "block.milkywaymod.goat_old_cheese_block": "Goat Old Cheese Block",
+  "block.milkywaymod.cheesemaker_table": "Cheesemaker Table",
 
   "item.milkywaymod.cow_cheese": "Cow Cheese",
   "item.milkywaymod.sheep_cheese": "Sheep Cheese",
@@ -15,6 +16,7 @@
 
   "item.minecraft.milk_bucket": "Cow Milk Bucket",
 
+  "entity.minecraft,villager.milkywaymod.cheesemaker": "Cheesemaker",
 
   "milkywaymod.configuration.title": "MilkyWay Mod Configs",
   "milkywaymod.configuration.section.milkywaymod.common.toml": "MilkyWay Mod Configs",

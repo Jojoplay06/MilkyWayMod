@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "milkywaymod:cheese_poi",
+      "required": false
+    }
+  ]
+}
